@@ -12,21 +12,17 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
-<<<<<<< HEAD
 
   <div class="container">
        <div class="row">
                <div class="col-md-12 mt-4 ">
-=======
 <div class="container">
   <div class="row">
       <div class="col-md-6 mt-4 mx-auto">
->>>>>>> 89dd117 (Formcommit)
                <?php if(isset($_SESSION['message'])):?>
                     <h5 class="alert alert-danger"><?= $_SESSION['message']; ?></h5>
                <?php 
                unset($_SESSION['message']);
-<<<<<<< HEAD
 
                endif?> 
                <div class="card">
@@ -77,7 +73,6 @@ session_start();
 </div>
 </div>
 </div>
-=======
                endif?> 
 
         <div class="card" style="width: 600px;">
@@ -132,6 +127,5 @@ session_start();
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="validation.js"></script>
 
->>>>>>> 89dd117 (Formcommit)
 </body>
 </html>

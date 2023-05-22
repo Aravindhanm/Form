@@ -74,11 +74,8 @@ $sql = "SELECT * FROM page ORDER BY $sort_by $sort_order";
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         $total_records = $result['count'];
 
-<<<<<<< HEAD
         $records_per_page = 5;
-=======
         $records_per_page = 7;
->>>>>>> 89dd117 (Formcommit)
         $total_pages = ceil($total_records / $records_per_page);
 
         $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -119,11 +116,8 @@ $sql = "SELECT * FROM page ORDER BY $sort_by $sort_order";
         </tbody>
             </table>
 
-<<<<<<< HEAD
         <ul class="pagination">
-=======
         <ul class="pagination  justify-content-end">
->>>>>>> 89dd117 (Formcommit)
      <?php if ($current_page > 1): ?>
         <li class="page-item"><a class="page-link" href="?page=<?php echo $current_page - 1; ?>">Previous</a></li>
         <?php endif; ?>
