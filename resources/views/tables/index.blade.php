@@ -55,4 +55,6 @@
                         </form></td></tr>@endforeach
                     </tbody>
  </table>{{ $tables->appends(request()->except('page'))->links() }}</div></div></div></div></div>
+ <div>&nbsp;</div>
+ <div>&nbsp;</div>
 @endsection
