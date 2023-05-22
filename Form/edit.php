@@ -66,9 +66,15 @@ if(isset($_POST['update'])) {
 
   <div class="container">
        <div class="row">
+<<<<<<< HEAD
                <div class="col-md-12 mt-4 ">
 
                <div class="card">
+=======
+               <div class="col-md-6 mt-4 mx-auto">
+
+               <div class="card" style="width: 600px;">
+>>>>>>> 89dd117 (Formcommit)
         <div class="card-header">
             
         <h3>Update List
@@ -93,7 +99,11 @@ if(isset($_POST['update'])) {
 <div class="mb-3">
 <label class="form-label" >email</label>  
 
+<<<<<<< HEAD
   <input type="text" name="email" value="<?php echo $row['email']; ?>" class="form-control">
+=======
+  <input type="text" name="email" id="email" value="<?php echo $row['email']; ?>" class="form-control">
+>>>>>>> 89dd117 (Formcommit)
 </div>
 
 <div class="mb-3">
@@ -120,8 +130,12 @@ if(isset($_POST['update'])) {
 
   <br>
   <br>
+<<<<<<< HEAD
   <input type="submit" name="update" value="Update" class="btn btn-success">
   <input type="reset"  value="Reset" class="btn btn-danger float-end">
+=======
+  <input type="submit" name="update" value="Update" class="btn btn-success float-center d-block mx-auto " style="width: 150px;">
+>>>>>>> 89dd117 (Formcommit)
 
 </form>
 </div>

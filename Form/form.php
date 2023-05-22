@@ -30,9 +30,15 @@ $sql = "SELECT * FROM page ORDER BY $sort_by $sort_order";
                endif?> 
 <form method="GET">
 <div class="input-group mb-3">
+<<<<<<< HEAD
         <a href="form.php" class="btn btn-danger"><i class="bi bi-arrow-left"></i></a>
 		<input type="text" name="search" id="search" class="form-control" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>">
 		<button type="submit" class="btn btn-success" > <i class="bi bi-search"></i>&nbsp; Search</button>
+=======
+        <a href="form.php" class="btn btn-danger" style="width: 80px;"><i class="bi bi-arrow-left"></i></a>
+		<input type="text" name="search" id="search" class="form-control" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>">
+		<button type="submit" class="btn btn-success "  style="width: 150px;"> <i class="bi bi-search"></i>&nbsp; &nbsp; Search</button>
+>>>>>>> 89dd117 (Formcommit)
 </div>
 
 	</form>
@@ -40,7 +46,11 @@ $sql = "SELECT * FROM page ORDER BY $sort_by $sort_order";
         <div class="card-header">
             
         <h3>List
+<<<<<<< HEAD
         <a href="formadd.php" class="btn btn-primary float-end"><i class="bi bi-plus-square"></i>&nbsp; AddList</a></h3>
+=======
+        <a href="formadd.php" class="btn btn-primary float-end" ><i class="bi bi-plus-square" ></i>&nbsp; AddList</a></h3>
+>>>>>>> 89dd117 (Formcommit)
 
         </div>
         <div class="card-body">
@@ -64,7 +74,11 @@ $sql = "SELECT * FROM page ORDER BY $sort_by $sort_order";
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         $total_records = $result['count'];
 
+<<<<<<< HEAD
         $records_per_page = 5;
+=======
+        $records_per_page = 7;
+>>>>>>> 89dd117 (Formcommit)
         $total_pages = ceil($total_records / $records_per_page);
 
         $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -105,7 +119,11 @@ $sql = "SELECT * FROM page ORDER BY $sort_by $sort_order";
         </tbody>
             </table>
 
+<<<<<<< HEAD
         <ul class="pagination">
+=======
+        <ul class="pagination  justify-content-end">
+>>>>>>> 89dd117 (Formcommit)
      <?php if ($current_page > 1): ?>
         <li class="page-item"><a class="page-link" href="?page=<?php echo $current_page - 1; ?>">Previous</a></li>
         <?php endif; ?>

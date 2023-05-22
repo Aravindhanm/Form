@@ -14,6 +14,10 @@ if(isset($_POST['submit'])) {
     $target_file = $target_dir . basename($_FILES["image"]["name"]);
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 89dd117 (Formcommit)
     if (file_exists($target_file)) {
         
         $_SESSION['message']="File already exists.";
@@ -36,7 +40,11 @@ if(isset($_POST['submit'])) {
         } else {
             
             $_SESSION['message']="Not Inserted ";
+<<<<<<< HEAD
             echo"<script>window.location.href='form.php'</script>";
+=======
+            echo"<script>window.location.href='formadd.php'</script>";
+>>>>>>> 89dd117 (Formcommit)
         }
     }
 }
